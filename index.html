@@ -7,67 +7,80 @@
       content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no"
     />
     <title>BOOOOOOM</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="‘BOOOOOOM!’ 붐은 ‘증가, 발전, 성황’이라는 의미를 가지고 있습니다. 그동안 6명의 배우미들은 더배곳이라는 같은 시작점에서 다양한 매체를 넘나들며 세밀한 작업으로 에너지를 응축해왔습니다. 이번 맺음전에서는 일러스트・사운드・영상・글꼴・공간・웹이라는 각자 다른 매체를 통해 에너지를 펼쳐 보이고자 합니다. 이는 파주타이포그라피배곳 더배곳 마친보람 맺음전 《BOOOOOOM》이라는 노력의 결과물이 됩니다."
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
+
     <div class="container">
-<p class="item">BOOOOOOM</p>
-<p class="item">2021. 1.7. - 1. 31.</p>
-<p class="item">BOOOOOOM</p>
-<p class="item">BOOOOOOM</p>
-<p class="item">BOOOOOOM</p>
-<p class="item">BOOOOOOM</p>
-<p class="item">BOOOOOOM</p>
-<p class="item">BOOOOOOM</p>
+<li class="item">BOOOOOOM</li>
+<li class="item">2021. 1.7. - 1. 31.</li>
+<li class="item">파주타이포그라피배곳</li>
+<li class="item">마친보람맺음전</li>
+<li class="item">PaTI Deobagot</li>
+<li class="item">graduation exhibition</li>
+
       
     </div>
 
- 
+    <div id="desc-container-0" style="display: none">
+      <iframe src="https://www.youtube.com/embed/PYd8lAnYyJw"></iframe>
+      <!-- <div class="title">BOOOOOOM</div> -->
+      <div class="text">‘BOOOOOOM’ 붐은 ‘증가, 발전, 성황’이라는 의미를 가지고 있습니다. 그동안 6명의 배우미들은 더배곳이라는 같은 시작점에서 다양한 매체를 넘나들며 세밀한 작업으로 에너지를 응축해왔습니다. 이번 맺음전에서는 일러스트・사운드・영상・글꼴・공간・웹이라는 각자 다른 매체를 통해 에너지를 펼쳐 보이고자 합니다. 이는 파주타이포그라피배곳 더배곳 마친보람 맺음전 《BOOOOOOM》이라는 노력의 결과물이 됩니다.
+      </div>
+    </div>
 
     <div id="desc-container-1" style="display: none">
       <iframe src="https://www.youtube.com/embed/PYd8lAnYyJw"></iframe>
-      <div class="title">BOOOOOOM</div>
-      <div class="text">‘BOOOOOOOM’ boom means "increase, development, and success." Until now, the six Deobaegot students have condensed their energy through detailed art work across various media at the same starting point of Deobaegot. In this Final Exhibition, we would like to show our energy through different media such as illustration, sound, video, font, space, and web. 
-        This is the result of an effort called 《BOOOOOM》 at the PaTI Deobagot graduation exhibition.
+      <!-- <div class="title">BOOOOOOM</div> -->
+      <div class="text">‘BOOOOOOM’ 붐은 ‘증가, 발전, 성황’이라는 의미를 가지고 있습니다. 그동안 6명의 배우미들은 더배곳이라는 같은 시작점에서 다양한 매체를 넘나들며 세밀한 작업으로 에너지를 응축해왔습니다. 이번 맺음전에서는 일러스트・사운드・영상・글꼴・공간・웹이라는 각자 다른 매체를 통해 에너지를 펼쳐 보이고자 합니다. 이는 파주타이포그라피배곳 더배곳 마친보람 맺음전 《BOOOOOOM》이라는 노력의 결과물이 됩니다.
       </div>
     </div>
 
     <div id="desc-container-2" style="display: none">
-      <iframe src="gyeon.html"></iframe>
-      <div class="title" onclick="location.href='gyeon.html'">Park Jeong Gyeon</div>
+      <iframe src="infospot-gyeon.html"></iframe>
+      <div class="title"></div>
       <div class="text">
-
-        <a href="https://sketch-book.xyz">sketch-book</a>
+        “이 웹사이트는 X, Y, Z축으로 구성된 좌표계로 이루어져 있다. 이 좌표 세계를 ‘커튼’ 이미지로 설정하고 그것이 선의 세계, 평면 세계, 공간 세계를 직조하게 했다. 각 페이지는 자바스크립트 코드로 생성되어, 독립된 세계이면서 여러 갈래로 얽힌 일종의 미로를 연출한다. 우리의 현실 세계를 추상화한 것처럼.” 
       </div>
     </div>
+
+    <div id="loader"></div>
 
     <script src="./js/three.min.js"></script>
     <script src="./js/panolens.min.js"></script>
     <script>
-      var infospot, infospot2, infospot3, viewer;
+      var infospot, infospot2, infospot3, infospot4, infospot5, infospot6, infospot7, viewer;
       const panorama = new PANOLENS.ImagePanorama("./images/5.jpg");
 
-      infospot = new PANOLENS.Infospot();
-      infospot.position.set(5000.0, -665.23, -3996.49);
-      infospot.addHoverText("The Where Is Bar");
+      ////////////////////////////////////////////////
+
+      infospot = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
+      infospot.position.set(7000.0, -665.23, -3996.49);
+      infospot.addHoverElement(
+        document.getElementById("desc-container-0"),
+        200
+      );
 
       infospot2 = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
-      infospot2.position.set(4800.0, 0.25, 197.56);
+      infospot2.position.set(-1250.0, 0, -5000);
       infospot2.addHoverElement(
         document.getElementById("desc-container-1"),
         200
       );
 
       infospot3 = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
-      infospot3.position.set(4500.0, -665.23, -3996.49);
+      infospot3.position.set(3000.0, -25.25, 197.56);
       infospot3.addHoverElement(
         document.getElementById("desc-container-2"),
         200
       );
 
-      // Get Google Map API Key - https://developers.google.com/maps/documentation/javascript/get-api-key
+      ////////////////////////////////////////////
 
       panorama.add(infospot);
       panorama.add(infospot2);
@@ -75,6 +88,10 @@
 
       viewer = new PANOLENS.Viewer();
       viewer.add(panorama);
+
+      
     </script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/fadeOut.js"></script>
   </body>
 </html>
