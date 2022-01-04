@@ -355,13 +355,13 @@ input[type="checkbox"] + label {
 
 @media screen and (max-width: 375px) {
   .intro-container {
-    position:absolute;
+    position: absolute;
     width: 80%;
     height: 80vh;
     object-fit: cover;
     top: 55%;
     left: 50%;
-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background: url(../images/intro_mobile.gif) no-repeat center;
   }
   .intro-container img {
@@ -392,7 +392,6 @@ img.preview {
 a {
   text-decoration: none;
   color: var(--background);
-
 }
 a:hover {
   color: var(--boxColor);
@@ -495,14 +494,16 @@ div .sticky {
   justify-content: flex-end;
 }
 
-section {
-  margin-bottom: 3rem;
-}
-section #ab {
-  position: sticky;
-  height: 100vh;
+#ab {
+  position: relative;
+  display: inline-block;
   width: 100%;
+  height: 50vh;
   top: 0;
+  margin: 2vw 0 30vw 0;
+}
+#ab:last-of-type {
+margin-bottom: 0;
 }
 
 ul {
@@ -616,6 +617,16 @@ p.text {
   line-height: 1.55;
   word-break: keep-all;
 }
+p.y-text {
+  font-family: "AGChoiJeongHoStd-Regular-SW", serif;
+  position: relative;
+  display: inline-block;
+  width: 28%;
+  margin: 0 0 0 1vw;
+  font-size: 0.4rem;
+  line-height: 1.55;
+  word-break: keep-all;
+}
 
 .img-preview {
   width: 8%;
@@ -625,7 +636,7 @@ img.img-preview:hover {
   transform: scale(5);
 }
 
-.img-container{
+.img-container {
   position: absolute;
   width: calc(67.5% - 16px);
   margin: -16.5vw 0 0 30%;
@@ -635,6 +646,13 @@ img.t-img {
   position: relative;
   display: block;
   margin: 3vw 0 0 3vw;
+}
+img.y-img {
+  position: absolute;
+  display: block;
+  width: calc(67.5% - 16px);
+
+  margin: 0vw 0 0 30%;
 }
 
 video.video-1 {
