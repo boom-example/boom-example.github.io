@@ -216,27 +216,16 @@ header {
 /* The Modal (background) */
 .ebcf_modal1 {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 80px;
   padding-bottom: 80px;
   opacity: 1;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
-
-  /* Fallback color */
-
-  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -260,30 +249,21 @@ header {
 /*<!-- Modal -->*/
 
 /*<!-- Modal -->*/
-/* The Modal (background) */
+
 .ebcf_modal2 {
   display: none;
-  /* Hidden by default */
+
   position: fixed;
-  /* Stay in place */
+
   z-index: 1;
-  /* Sit on top */
   padding-top: 80px;
   padding-bottom: 80px;
   opacity: 1;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
-
-  /* Fallback color */
-
-  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -306,6 +286,18 @@ header {
 
 /*<!-- Modal -->*/
 
+/* tooltip */
+
+.tooltip1, .tooltip2, .tooltip3, .tooltip4, .tooltip5, .tooltip6{
+  position: absolute;
+  width: 40%;
+  transform: translate(-50%, -150%);
+  left: 75%;
+  z-index: 3;
+  transition: opacity 0.25s linear;
+  opacity: 0;
+}
+
 img.intro {
   width: 100%;
   height: 100vh;
@@ -324,6 +316,9 @@ img.intro2 {
 
 .none {
   display: none;
+}
+.block {
+  display: block;
 }
 
 iframe {
@@ -475,14 +470,14 @@ a:visited {
 /* /element/ */
 .nav1 {
   width: 100%;
-  height: 300px;
+  height: 20vw;
   position: relative;
   top: 0;
 }
 
 #nav2 {
   width: 100%;
-  height: 150px;
+  height: 15vw;
   position: relative;
   top: 0;
 }
@@ -503,7 +498,7 @@ div .sticky {
   margin: 2vw 0 30vw 0;
 }
 #ab:last-of-type {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 ul {
@@ -639,13 +634,13 @@ img.img-preview:hover {
 .img-container {
   position: absolute;
   width: calc(67.5% - 16px);
-  margin: -16.5vw 0 0 30%;
+  margin: -16vw 0 0 30%;
 }
 
 img.t-img {
   position: relative;
   display: block;
-  margin: 3vw 0 0 3vw;
+  margin: 3.25vw 0 0 3vw;
 }
 img.y-img {
   position: absolute;
