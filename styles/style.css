@@ -167,8 +167,9 @@ header {
 }
 
 p.text {
-  font-size: 0.75rem;
-  line-height: 1.55;
+  width: 80%;
+  font-size: 0.6rem;
+  line-height: 1.6;
   word-break: keep-all;
 }
 
