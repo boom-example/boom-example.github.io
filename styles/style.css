@@ -412,6 +412,38 @@ iframe {
 
 /*<!-- Modal -->*/
 
+.line{
+  position: absolute;
+  width: 32px;
+  left: 0;
+  bottom: 0;
+
+  animation-delay: 2s;
+}
+
+@keyframes walk {
+	0% {left:0;transform: scaleX(-1);visibility:visible;}
+	49% {left:calc(100vw - 43px);transform: scaleX(-1);}
+	50% {transform: scaleX(1);}
+	99% {left:0;transform: scaleX(1);}
+	100% {left:0;transform: scaleX(-1);}
+}
+
+@-webkit-keyframes bun{from{-webkit-filter:hue-rotate(0);filter:hue-rotate(0);}to{-webkit-filter:hue-rotate(360deg);filter:hue-rotate(360deg);}}@keyframes bun{from{-webkit-filter:hue-rotate(0);filter:hue-rotate(0);}to{-webkit-filter:hue-rotate(360deg);filter:hue-rotate(360deg);}}
+
+.sheep {
+  visibility: hidden;
+	position:fixed;
+	transform: scaleX(-1);
+	bottom:0;
+	animation: walk 30s linear infinite;
+}
+
+img[src="lambsleep.gif"], img[src="twitter_foollovers.gif"], img[src="sheep_foollovers.gif"], img[src="torsoda03_foollovers.gif"], img[src="unico_staticwind.gif"], img[src="torsoda03_foollovers.gif"], img[src="unico_staticwind.gif"], img[src="foollovers.gif"], img[src="C793EB3D-4832-4873-9446-DEF5B4E424DF.png"] {
+  animation: bun 1s linear infinite;
+}
+
+
 
 .merong-bg {
   position: absolute;
