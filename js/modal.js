@@ -16,6 +16,18 @@ window.onclick = function(event) {
     }
 }
 
+$(document).ready(function () {
+  $("#mark2").click(function () {
+    $(".ebcf_modal2").addClass("block");
+  });
+});
+
+$(document).ready(function () {
+  $(".ebcf_modal2").click(function () {
+    $(".ebcf_modal2").removeClass("block");
+  });
+});
+
 
 
 
