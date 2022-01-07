@@ -331,6 +331,14 @@ iframe {
 /* content-2 */
 
 /*<!-- Modal -->*/
+
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+
 /* The Modal (background) */
 
 .ebcf_modal1 {
@@ -368,6 +376,7 @@ iframe {
 
 .ebcf_modal2 {
   display: none;
+
   position: fixed;
 
   z-index: 1;
@@ -383,7 +392,7 @@ iframe {
 
 /* Modal Content */
 .ebcf_modal-content2 {
-  background-color: whitesmoke;
+  background-color: rgba(180, 180, 180, 1);
   color: var(--boxColor);
   margin: auto;
   padding: 24px 24px 24px 24px;
@@ -398,6 +407,9 @@ iframe {
   text-decoration: none;
   cursor: pointer;
 }
+
+/*<!-- Modal -->*/
+
 
 .merong-bg {
   position: absolute;
