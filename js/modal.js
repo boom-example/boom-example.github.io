@@ -18,19 +18,13 @@ window.onclick = function(event) {
 
 $(document).ready(function () {
   $("#mark2").click(function () {
-    $(".ebcf_modal2").addClass("block");
+    $(".ebcf_modal2").css("display", "block");
   });
+  
 });
-
 $(document).ready(function () {
   $(".ebcf_modal2").click(function () {
-    $(".ebcf_modal2").removeClass("block");
+    $(".ebcf_modal2").css("display", "none");
   });
 });
-
-
-
-
-
-
 
