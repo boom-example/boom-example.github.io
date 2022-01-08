@@ -23,7 +23,7 @@ $(document).ready(function () {
   
 });
 $(document).ready(function () {
-  $(".ebcf_modal2").click(function () {
+  $(".ebcf_close2").click(function () {
     $(".ebcf_modal2").css("display", "none");
   });
 });
