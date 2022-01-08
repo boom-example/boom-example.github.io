@@ -15,7 +15,7 @@ var swiper = new Swiper(".mySwiper", {
     delay: 800,
     disableOnInteraction: true,
   },
-  speed: 3000,
+  speed: 100,
   slidersPerView: 1,
   effect: "fade",
 });
