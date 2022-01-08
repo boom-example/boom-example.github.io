@@ -107,7 +107,6 @@ html {
   overflow-x: hidden;
   min-width: 100%;
   overflow: hidden;
-
 }
 
 @media screen and (min-width: 512px) {
@@ -289,7 +288,6 @@ iframe {
   height: 100vh;
   transform: translate(-50%, 0);
   overflow: hidden;
-
 }
 
 /* content-1 */
@@ -405,17 +403,15 @@ iframe {
 
 /* The Close Button */
 
-.ebcf_close2{
+.ebcf_close2 {
   position: absolute;
-right: 16.75%;
-top: 19%;
-  
+  right: 16.75%;
+  top: 19%;
 }
-.ebcf_close2{
+.ebcf_close2 {
   position: absolute;
-right: 16.75%;
-top: 19%;
-  
+  right: 16.75%;
+  top: 19%;
 }
 
 .ebcf_close2:hover,
@@ -426,7 +422,7 @@ top: 19%;
 
 /*<!-- Modal -->*/
 
-.line{
+.line {
   position: absolute;
   width: 32px;
   left: 0;
@@ -436,27 +432,84 @@ top: 19%;
 }
 
 @keyframes walk {
-	0% {left:0;transform: scaleX(-1);visibility:visible;}
-	49% {left:calc(100vw - 43px);transform: scaleX(-1);}
-	50% {transform: scaleX(1);}
-	99% {left:0;transform: scaleX(1);}
-	100% {left:0;transform: scaleX(-1);}
+  0% {
+    left: 0;
+    transform: scaleX(-1);
+    visibility: visible;
+  }
+  49% {
+    left: calc(100vw - 43px);
+    transform: scaleX(-1);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  99% {
+    left: 0;
+    transform: scaleX(1);
+  }
+  100% {
+    left: 0;
+    transform: scaleX(-1);
+  }
 }
 
-@-webkit-keyframes bun{from{-webkit-filter:hue-rotate(0);filter:hue-rotate(0);}to{-webkit-filter:hue-rotate(360deg);filter:hue-rotate(360deg);}}@keyframes bun{from{-webkit-filter:hue-rotate(0);filter:hue-rotate(0);}to{-webkit-filter:hue-rotate(360deg);filter:hue-rotate(360deg);}}
+@-webkit-keyframes bun {
+  from {
+    -webkit-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes bun {
+  from {
+    -webkit-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
 
-.sheep {
+.sheep1 {
   visibility: hidden;
-	position:fixed;
-	transform: scaleX(-1);
-	bottom:0;
-	animation: walk 30s linear infinite;
-}
+  position: fixed;
+  width: 3vw;
+  
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 
-img[src="lambsleep.gif"], img[src="twitter_foollovers.gif"], img[src="sheep_foollovers.gif"], img[src="torsoda03_foollovers.gif"], img[src="unico_staticwind.gif"], img[src="torsoda03_foollovers.gif"], img[src="unico_staticwind.gif"], img[src="foollovers.gif"], img[src="C793EB3D-4832-4873-9446-DEF5B4E424DF.png"] {
-  animation: bun 1s linear infinite;
+  bottom: 0;
+  animation: walk 30s linear infinite;
 }
+.sheep2 {
+  visibility: hidden;
+  position: fixed;
+  width: 3vw;
+margin-left: 100px;
+  
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 
+  bottom: 0;
+  animation: walk 30s linear infinite;
+}
+.sheep3 {
+  visibility: hidden;
+  position: fixed;
+  width: 3vw;
+  margin-right: 100px;
+  
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  bottom: 0;
+  animation: walk 30s linear infinite;
+}
 
 
 .merong-bg {
@@ -548,7 +601,6 @@ img[src="lambsleep.gif"], img[src="twitter_foollovers.gif"], img[src="sheep_fool
 #bag-gif-2:hover {
   transform: translate(-50%, -50%) scale(1.4);
 }
-
 
 /* swiper */
 
