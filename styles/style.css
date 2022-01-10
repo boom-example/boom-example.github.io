@@ -297,6 +297,17 @@ iframe {
   overflow: hidden;
 }
 
+
+#iframe-merong {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  width: 10%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
 /* content-1 */
 
 #blue-1 {
@@ -353,7 +364,7 @@ iframe {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 36px;
+  padding-top: 108px;
   padding-bottom: 36px;
   opacity: 1;
   left: 0;
@@ -400,12 +411,14 @@ iframe {
 
 /* Modal Content */
 .ebcf_modal-content2 {
-  background-color: rgba(255, 255, 255, 1);
+background-color: white;
   color: var(--boxColor);
   margin: auto;
   padding: 24px 24px 24px 24px;
   width: 70%;
+  height: 100vh;
   border-radius: 16px;
+
 }
 
 /* The Close Button */
@@ -423,6 +436,52 @@ iframe {
 
 .ebcf_close2:hover,
 .ebcf_close2:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*<!-- Modal -->*/
+
+
+/*<!-- Modal -->*/
+
+.ebcf_modal3{
+  display: none;
+
+  position: fixed;
+
+  z-index: 1;
+  padding-top: 180px;
+  padding-bottom: 80px;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Modal Content */
+.ebcf_modal-content3{
+  background-color: rgba(255, 255, 255, 1);
+  color: var(--boxColor);
+  margin: auto;
+  padding: 24px 24px 24px 24px;
+  width: 70%;
+  border-radius: 16px;
+}
+
+/* The Close Button */
+
+.ebcf_close3{
+  position: absolute;
+  right: 16.75%;
+  top: 19%;
+}
+
+
+.ebcf_close3:hover,
+.ebcf_close3:focus {
   text-decoration: none;
   cursor: pointer;
 }
@@ -635,6 +694,10 @@ iframe {
   .swiper-button-prev {
     --swiper-navigation-size: 24px;
   }
+  .swiper-button-next2,
+  .swiper-button-prev2 {
+    --swiper-navigation-size: 24px;
+  }
 
   .ebcf_modal-content1 {
     margin: auto;
@@ -734,6 +797,7 @@ iframe {
   width: 90%;
   position: relative;
   margin: 0 auto;
+
 }
 
 .swiper-slide {
@@ -749,3 +813,25 @@ iframe {
 .swiper-pagination {
   display: none;
 }
+
+
+.swiper-button-next:after {
+  color: #d2d2d2;
+  padding-right: 1.25rem;
+  position: absolute;
+
+
+  cursor: pointer;
+  z-index: 10000 !important;
+}
+
+.swiper-button-prev:after {
+  color: #d2d2d2;
+  padding-left: 1.25rem;
+  position: absolute;
+
+  cursor: pointer;
+
+  z-index: 10000 !important;
+}
+

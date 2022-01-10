@@ -28,3 +28,15 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("#mark3").click(function () {
+    $(".ebcf_modal3").css("display", "block");
+  });
+  
+});
+$(document).ready(function () {
+  $(".ebcf_close3").click(function () {
+    $(".ebcf_modal3").css("display", "none");
+  });
+});
+
