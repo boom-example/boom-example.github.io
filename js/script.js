@@ -8,6 +8,22 @@ $(document).ready(function(){
   $("#content-2").hide();
   $("#content-3").hide();
 
+
+  $(".home").click(function(){
+    $("#iframe-1").hide();
+    $("#body").show();
+    $("#main-1").hide();
+    $("#main-2").hide();
+
+    $("#content-1").show();
+    $("#content-2").show();
+    $("#content-3").show();
+    $("#main-3").show();
+    $(".main-bg").show();
+});
+
+
+
   
   $("#main-1").click(function(){
       $("#main-1").hide();
