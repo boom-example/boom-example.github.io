@@ -11,10 +11,6 @@ var swiper = new Swiper(".mySwiper", {
 
   fadeEffect: { crossFade: true },
   virtualTranslate: true,
-  autoplay: {
-    delay: 800,
-    disableOnInteraction: true,
-  },
   speed: 1000,
   slidersPerView: 1,
   effect: "fade",
