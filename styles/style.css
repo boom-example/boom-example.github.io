@@ -416,7 +416,8 @@ background-color: white;
   margin: auto;
   padding: 24px 24px 24px 24px;
   width: 70%;
-  height: 100vh;
+
+
   border-radius: 16px;
 
 }
@@ -797,6 +798,7 @@ background-color: white;
   width: 90%;
   position: relative;
   margin: 0 auto;
+  vertical-align: middle;
 
 }
 
@@ -808,6 +810,7 @@ background-color: white;
 .swiper-slide img {
   display: block;
   width: 100%;
+  
 }
 
 .swiper-pagination {
